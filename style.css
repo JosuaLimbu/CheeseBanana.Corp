@@ -1,0 +1,413 @@
+#home{
+    width: 100%;
+    background-image: url("Images/Background.png" );
+    background-position: center;
+    background-size: cover;
+}
+
+ /* Animasi Ketikan*/
+
+ .typewriter h5 {
+    color:black;
+    overflow: hidden; 
+    font-family: serif;
+    border-right: .15em solid orange; 
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: .14em;
+    animation: 
+      typing 2s steps(40, end),
+      blink-caret .75s step-end infinite;
+      
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+
+  }
+  
+/* Kumpulan tambahan font */
+@font-face {
+    font-family: bebas;
+    src: url(Font/BebasNeue.otf);
+  }
+@font-face {
+    font-family: simplifica;
+    src: url(Font/SIMPLIFICA.ttf);
+  }
+  @font-face {
+    font-family: montserrat regular ;
+    src: url(Font/Montserrat/Montserrat-Regular.ttf);
+  }
+@font-face {
+    font-family: montserrat bold ;
+    src: url(Font/Montserrat/Montserrat-Bold.ttf);
+  }
+@font-face {
+    font-family: montserrat semibold ;
+    src: url(Font/Montserrat/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: roboto slab  ;
+    src: url(Font/Roboto_Slab/RobotoSlab-Regular.ttf);
+}
+@font-face {
+    font-family: sosmed  ;
+    src: url(Font/Sosmed.otf);
+}
+.header .background{
+    position:absolute;
+    height: 100vh;
+    width: 100%; 
+   
+}
+.navbar{
+    display: flex;
+    justify-content: space-between ;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.300);
+    position: fixed;
+    width: 100%;
+    -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+    -moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+    box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+    z-index: 20;
+    
+}
+.collapse ul li a{
+    text-align: right;
+    width:100%; 
+    
+    padding-right:400px; 
+}
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 45px;
+    padding-left: 30px;
+    color: black;
+    font-family: montserrat regular;
+    text-shadow: 1px 1px 3px white;
+    
+   
+}
+.navbar-expand-md .navbar-nav .nav-link:hover {
+    
+    color: black;
+   
+}
+.navbar-brand{
+    padding-left: 5%;
+}
+.selamat{
+    font-family: bebas;
+    padding-top: 230px;
+    color: white;
+    font-size: 50px;
+    padding-left: 55px;
+    text-shadow: 4px 4px 2px black;
+}
+.perusahaan{
+    font-family: bebas;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 95px;
+    padding-left: 55px;
+    text-shadow: 4px 4px 2px black;
+    
+}
+.find{
+    font-family: serif;
+    color: white;
+    font-size: 30px;
+    padding-left: 55px;
+    border-bottom: 1px white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 10px;
+}
+/*Icon Sosmed*/
+.social{
+	display: flex;
+    padding-left: 1050px;
+    align-content: center;
+    position: relative;
+}
+.social a{
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.801);
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+    
+}
+
+/*Page Profil*/
+.imgprofil{
+    position: absolute;
+    width: 375px;
+}
+.yellowbox{
+    position: relative;
+    height: 120px;
+    width: 45px;
+    background-color: #FFDB01;
+    bottom: 50px;
+}
+.blackbox{ 
+    height: 678px;
+    width: 150px;
+    background-color: black;
+}
+.profil{
+    padding-left: 380px;
+    padding-top: 100px;
+    position: absolute;
+    line-height: 30px;
+    font-family: montserrat bold;
+    font-size: 50px;
+    z-index: 1;
+}
+.riwayat{
+    padding-left: 380px;
+    padding-top: 210px;
+    padding-right: 50px;
+    position: absolute;
+    line-height: 30px;
+    font-size: 25px;
+    font-family: serif;
+    z-index: 1;
+}
+.riwayat span{
+    font-family: montserrat semibold;
+}
+.visi{
+    padding-left: 320px;
+    padding-top: 385px;
+    position: absolute;
+    line-height: 30px;
+    font-size: 25px;
+    font-family: serif;
+    z-index: 1;
+}
+.visi span{
+    font-family: montserrat semibold;
+}
+.isimisi{
+    padding-left: 190px;
+    padding-top: 498px;
+    position: absolute;
+    line-height: 30px;
+    font-size: 25px;
+    font-family: serif;
+    z-index: 1;
+}
+    
+.misi span{
+    padding-left: 208px;
+    padding-top: 483px;
+    position: absolute;
+    line-height: 30px;
+    font-size: 25px;
+    font-family: montserrat semibold;
+    line-height: 0px;
+}
+.product{
+   padding-top: 50px;
+    padding-left: 50px;
+    font-family: montserrat bold;
+    font-size: 50px;
+    top: 500px;
+}
+.img1{
+    
+    width: 150px;
+    z-index: 3;
+}
+.img2{
+    width: 155px;
+    z-index: 3;
+}
+.img3{
+    width: 150px;
+    z-index: 3;
+}
+
+.graybox1{
+   position: absolute;
+    height: 280px;
+    width: 200px;
+    background-color: #D1D1D1;
+    top: 75px;
+    left: 115px;
+    z-index: -8;
+}
+.graybox2{
+    position: absolute;
+     height: 280px;
+     width: 200px;
+     background-color: #D1D1D1;
+     top: 75px;
+     left: 539px;
+     z-index: -9;
+ }
+ .graybox3{
+    position: absolute;
+     height: 280px;
+     background-color: #D1D1D1;
+     width: 200px;
+     top: 75px;
+     left: 963px;
+     z-index: -9;
+ }
+ 
+.tabelproduk{
+    position: absolute;
+    width: 1345px;
+    line-height: 20px;
+}
+.top1{
+    padding-left: 115px;
+    font-family: roboto slab;
+}
+.top2{
+    padding-left: 115px;
+    font-family: roboto slab;
+}
+.top3{
+    padding-left: 115px;
+    font-family: roboto slab;
+}
+.top4{
+    font-family: roboto slab;
+    line-height: 10px;
+    
+}
+.produkname{
+   font-family: montserrat semibold;
+   font-size: 20px;
+}
+.harga{
+    padding-left: 115px;
+    font-family: serif; 
+}
+.ket1{
+    padding-left: 115px;
+    font-family: serif;
+    line-height: 18px;
+}
+.ket2{
+    padding-left: 115px;
+    font-family: serif;
+    line-height: 18px;
+}
+.ket3{
+    padding-left: 115px;
+    font-family: serif;
+    line-height: 18px;
+}
+.tabel2{
+    width: 1345px;
+    line-height: 10px;
+}
+.btn{
+    font-size: 14px;
+    line-height: 12px;
+}
+.maknyus{
+    line-height: 10px;
+    font-family: montserrat semibold;
+    font-size: 20px;
+}
+.harga2{
+    line-height: 10px;
+    font-family: serif;
+}
+.pesan2{
+    line-height: 0px;
+    font-family: serif;
+}
+.graybox4{
+    position: absolute;
+    width: 110px;
+    height: 49px;
+    padding-left: 20px ;
+    background-color:#D1D1D1;;
+    z-index:-8 ;
+}
+.contact{
+    padding-top: 70px;
+     padding-left: 50px;
+     font-family: montserrat bold;
+     font-size: 50px;
+     top: 500px;
+ }
+.alamat{
+    padding-left: 50px;
+    padding-top: 30px;
+    line-height: 30px;
+    font-family: serif;
+    font-size:30px;
+}
+.alamat span{
+    font-family: sosmed;
+    font-size: 45px;
+}
+
+.container1{
+    width: 100%;
+    height: 150px;
+    background-color: #FFDB01;
+}
+.samping{
+    position: absolute;
+    padding-left: 940px;
+}
+*, ::after, ::before {
+    box-sizing: initial;
+}
+/*Icon Sosmed*/
+.social2{
+	display: flex;
+    padding-left: 160px;
+    align-content: center;
+}
+.social2 a{
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: rgba(255, 255, 255, 0.596);
+	text-decoration: none;
+	font-size: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.801);
+}
+.social2 a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+    
+}
+.container1 {
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.788) ;
+    padding-left: 400px;
+    font-family: montserrat bold;
+    font-size: 40px;
+}
+
+
+
